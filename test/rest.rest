@@ -1,0 +1,30 @@
+POST http://localhost:8000/books
+Content-Type: application/json
+
+{
+    "title" : "RDPD",
+    "author" : "jin xin cook",
+    "publishedYear" : 2001
+}
+
+###
+GET http://localhost:8000/books/
+
+###
+
+GET http://localhost:8000/books/65b35bc8466fe9d89be80ff8
+
+###
+
+PUT http://localhost:8000/books/65b35bc8466fe9d89be80ff8
+Content-Type: application/json
+
+{
+    "title" : "RDPD",
+    "author" : "jin xin cook",
+    "publishedYear" : 2001
+}
+
+###
+
+DELETE http://localhost:8000/books/65b35c26754af504dae9a5ea
