@@ -12,7 +12,7 @@ GET http://localhost:8000/books/
 
 ###
 
-GET http://localhost:8000/books/65b35bc8466fe9d89be80ff8
+GET http://localhost:8000/books/65b35c0744cccfc2762f7162
 
 ###
 
@@ -27,4 +27,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:8000/books/65b35c26754af504dae9a5ea
+DELETE http://localhost:8000/books/65b35bc8466fe9d89be80ff8

@@ -57,7 +57,7 @@ router.put("/:id", async (req, res) => {
 router.post("/", async (req, res) => {
   try {
     if (!req.body.title || !req.body.author || !req.body.publishedYear) {
-      res.status(400).send("please fill all the required fields");
+      res.status(400).json({ error: "please fill all the required fields" });
     } else {
       const newBook = {
         title: req.body.title,
@@ -65,7 +65,7 @@ router.post("/", async (req, res) => {
         publishedYear: req.body.publishedYear,
       };
       const book = await Book.create(newBook);
-      res.status(200).send(book);
+      res.status(200).json({ message: "Book has successfully created" });
     }
   } catch (err) {
     console.log(err.message);
